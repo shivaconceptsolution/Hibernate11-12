@@ -11,6 +11,7 @@
 
 <form name="frm" action="StudentSer" method="post">
 <input type="text" name="txtrno" placeholder="enter rno" />
+<% if(request.getAttribute("error")!=null) out.print(request.getAttribute("error")); %>
 <br>
 <br>
 <input type="text" name="txtsname" placeholder="enter name"/>
@@ -24,5 +25,6 @@
 <br>
 <input type="submit" name="btnsubmit" value="click" />
 </form>
+<a href="ViewStudent.jsp">View Student Record</a>
 </body>
 </html>
